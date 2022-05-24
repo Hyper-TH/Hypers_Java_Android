@@ -28,13 +28,22 @@ public class MainActivity extends AppCompatActivity
     // Method (Event Listener)
     public void onBtnClick(View view)
     {
-        // Access textview
-        TextView txtHello = findViewById(R.id.txtMessage);
+        // Access TextViews
+        TextView txtFirstName = findViewById(R.id.txtFirstName);
+        TextView txtLastName = findViewById(R.id.txtLastName);
+        TextView txtEmail = findViewById(R.id.txtEmail);
 
-        EditText edtTxtName = findViewById(R.id.edtTxtName);
-        txtHello.setText("Hello " + edtTxtName.getText().toString()); // Change text
+        // Access EditTexts
+        EditText edtFirstName = findViewById(R.id.edtTxtFirstname);
+        EditText edtLastName = findViewById(R.id.edtTxtLastName);
+        EditText edtEmail = findViewById(R.id.edtTxtEmail);
 
-        // Ended on 59:00
+        // Update textViews
+        txtFirstName.setText("First name: " + edtFirstName.getText().toString()); // Change text
+        txtLastName.setText("Last name: " + edtLastName.getText().toString()); // Change text
+        txtEmail.setText("Email: " + edtEmail.getText().toString()); // Change text
+
+        // TODO: Registration page
 
     } // end onBtnClick
 
