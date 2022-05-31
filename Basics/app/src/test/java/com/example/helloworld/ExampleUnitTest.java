@@ -1,4 +1,4 @@
-package com.example.helloworld;
+package Basics.app.src.test.java.com.example.helloworld;
 
 import org.junit.Test;
 
